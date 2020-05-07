@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>Blog</title>
+        <link rel=stylesheet type=text/css href="{{ url_for('static', filename='styles.css') }}">
+        </head>
+    <body>
+        <div class="container">
+            <!-- <img class="logo" src ="/images/nodebloglogo.png" alt="logo"> -->
+        <nav>
+            <ul>
+                <li>
+                    <a href="/">Home</a> 
+                </li>
+                <li>
+                    <a href="/category">Add Category</a>
+                </li>
+                <li>
+                    <a href="/register">User</a>
+                </li>
+                <l1>
+                    <a href="/post">Add Post</a>
+                </l1>                
+            </ul>
+            
+        </nav>
+        {% block body%} {% endblock %}
+
+        <footer>
+            <p>NodeBlog @copy; 2016</p>
+        </footer>
+    </div>    
+    </body>
+</html>   
